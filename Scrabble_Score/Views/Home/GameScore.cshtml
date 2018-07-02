@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello Friend!</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body>
+    <h1>Scrabble Score</h1>
+        @foreach(var word in Model)
+        {
+            <p>Your Score for @word.GetWordToScore() is: @word.GetWordScore()</p>
+        }
+    
+  
+  </body>
+</html>
